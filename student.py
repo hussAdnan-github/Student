@@ -31,7 +31,7 @@ async def read_student():
     return students
 
 # إضافة طالب جديد
-@app.post('/student/')
+@app.post('/student')
 async def add_student(listStudent: Student):
     students.append(listStudent)
     return listStudent # أرجعت الكائن مباشرة ليكون JSON صحيح
